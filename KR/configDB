@@ -1,0 +1,16 @@
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price INT NOT NULL,
+    view VARCHAR(10) NOT NULL,
+    imgUrl VARCHAR(255) NOT NULL
+);
+
+INSERT INTO products (name, price, view, imgUrl)
+VALUES
+    ('Яблоко вкусное', 120, '₽/кг', 'apple.png'),
+    ('Бананы сладкие', 93, '₽/кг', 'banana.png'),
+    ('Апельсины красные', 258, '₽/кг', 'orange.png'),
+    ('Манго красивое', 375, '₽/кг', 'mango.png'),
+    ('Молоко 3,2%', 103, '₽/шт', 'milk.png'),
+    ('Кофе жареный молотый', 350, '₽/шт', 'coffee.png');
